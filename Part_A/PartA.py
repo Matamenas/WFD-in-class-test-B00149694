@@ -46,9 +46,14 @@ class test_Updates(unittest.TestCase):
     def testUpdateColour(Phone):
         colour = "Colour"
 
+# B5
+if __name__ == "__main__":
+    unittest.main()
+
 # A5
 class androidPhone(Phone):
     def __init__(self, chargingPort, brand, model, year, price, colour):
+        super().__init__(brand, model, year, price, colour)
         self.chargingPort = chargingPort
         self.brand = brand
         self.model = model
@@ -107,8 +112,6 @@ Phone1.display()
 print("\nPhone 2")
 Phone2.display()
 
-# B5
-if __name__ == "__main__":
-    unittest.main()
+
 
 
