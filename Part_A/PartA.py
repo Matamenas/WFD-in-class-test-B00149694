@@ -36,15 +36,15 @@ class Phone:
 # B5
 class test_Updates(unittest.TestCase):
     def testUpdateBrand(Phone):
-        brand = "Brand"
+        Phone.brand = "Brand Test"
     def testUpdateModel(Phone):
-        model = "Model"
+        Phone.model = "Model Test"
     def testUpdateYear(Phone):
-        year = "Year"
+        Phone.year = "Year Test"
     def testUpdatePrice(Phone):
-        price = "Price"
+        Phone.price = "Price Test"
     def testUpdateColour(Phone):
-        colour = "Colour"
+        Phone.colour = "Colour Test"
 
 # B5
 if __name__ == "__main__":
