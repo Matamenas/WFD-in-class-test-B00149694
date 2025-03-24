@@ -1,5 +1,6 @@
 import unittest
 
+# A2
 class Phone:
     def __init__(self, brand, model, year, price, colour):
         self.brand = brand
@@ -8,6 +9,7 @@ class Phone:
         self.price = price
         self.colour = colour
 
+    # A3
     def display(self):
         print("Brand: {}".format(self.brand))
         print("Model: {}".format(self.model))
@@ -15,6 +17,7 @@ class Phone:
         print("Price: {}".format(self.price))
         print("Colour: {}".format(self.colour))
 
+    # A4
     def updateBrand(self, brand):
         self.brand = brand
 
@@ -30,19 +33,20 @@ class Phone:
     def updateColour(self, colour):
         self.colour = colour
 
+# B5
 class test_Updates(unittest.TestCase):
-    def testUpdateBrand(self):
+    def testUpdateBrand(Phone):
         brand = "Brand"
-    def testUpdateModel(self):
+    def testUpdateModel(Phone):
         model = "Model"
-    def testUpdateYear(self):
+    def testUpdateYear(Phone):
         year = "Year"
-    def testUpdatePrice(self):
+    def testUpdatePrice(Phone):
         price = "Price"
-    def testUpdateColour(self):
+    def testUpdateColour(Phone):
         colour = "Colour"
 
-
+# A5
 class androidPhone(Phone):
     def __init__(self, chargingPort, brand, model, year, price, colour):
         self.chargingPort = chargingPort
@@ -52,6 +56,7 @@ class androidPhone(Phone):
         self.price = price
         self.colour = colour
 
+    # A6
     def display(self):
         print("Charging Port: {}".format(self.chargingPort))
         print("Brand: {}".format(self.brand))
@@ -60,7 +65,7 @@ class androidPhone(Phone):
         print("Price: {}".format(self.price))
         print("Colour: {}".format(self.colour))
 
-
+    # A7
     def updateChargingPort(self, chargingPort):
         self.chargingPort = chargingPort
 
@@ -79,9 +84,11 @@ class androidPhone(Phone):
     def updateColour(self, colour):
         self.colour = colour
 
+# A8
 Phone1 = Phone("IPhone", "15 XR", "2016", "699.99", "Silver")
 Phone2 = androidPhone("Type-C","Samsung", "Galaxy 7", "2018", "800.00", "Red")
 
+# A9
 print("initial Phones: ")
 print("\nPhone 1")
 Phone1.display()
@@ -100,6 +107,7 @@ Phone1.display()
 print("\nPhone 2")
 Phone2.display()
 
+# B5
 if __name__ == "__main__":
     unittest.main()
 
