@@ -8,7 +8,7 @@ class Car(models.Model):
     model = models.CharField(max_length=50)
     color = models.CharField(max_length=50)
     year = models.IntegerField()
-    forSale = models.BooleanField(default=True)
+    isforSale = models.BooleanField(default=True)
 
 class Customer(models.Model):
     customer_ID = models.IntegerField()
