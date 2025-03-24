@@ -1,22 +1,21 @@
 import unittest
 
-class MyClass:
-    pass
+from PartA import *
 
-class anotherClass:
-    pass
+
+
 
 
 class Test(unittest.TestCase):
     # B2
     def test_instance(self):
-        obj = MyClass()
-        self.assertIsInstance(obj, MyClass)
+        obj = Phone1
+        self.assertIsInstance(obj, Phone)
 
     # B3
     def test_NOT_instance(self):
-        obj = anotherClass()
-        self.assertNotIsInstance(isinstance(obj, MyClass), type(None))
+        obj = Phone2
+        self.assertNotIsInstance(isinstance(obj, androidPhone), type(None))
 
 class MyObject:
     def __init__(self, value):
@@ -25,9 +24,10 @@ class MyObject:
 class TestObjectIdentity(unittest.TestCase):
     # B4
     def test_two_objects_identical(self):
-        obj1 = MyObject(10)
-        obj2 = obj1
+        obj1 = Phone1
+        obj2 = Phone2
         self.assertIs(obj1, obj2)
+
 
 
 # B6
